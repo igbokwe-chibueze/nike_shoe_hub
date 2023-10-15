@@ -9,7 +9,7 @@ import {
   SuperQuality,
 } from "./sections";
 
-import { Nav } from "./componets";
+import { Nav } from "./components";
 
 const App = () => {
   return (
