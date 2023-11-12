@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-import { shoes, statistics } from "../constants";
+import { shoes, statistics } from "../constants/data";
 import { Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
-import { arrowRight } from "../assets/icons";
+
+import { ArrowRightIcon } from "../assets/allIcons";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -30,7 +31,9 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Button label='Shop now' iconURL={arrowRight} />
+        <Button label='Shop now'>
+          <ArrowRightIcon className={"w-8 h-8 text-coral-red fill-white"}/>
+        </Button>
 
         <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
           {statistics.map((stat, index) => (
