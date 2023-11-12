@@ -1,0 +1,32 @@
+import { navLinks } from '../constants/data';
+import { HamburgerIcon, CloseIcon} from '../assets/allIcons';
+
+
+
+            {/* Hamburger */}
+            <div className='md:hidden'>
+                <button type="button"
+                    onClick={() => setMenuToggle(!menuToggle)}  // Toggle the 'toggle' state when the icon is clicked.
+                    className="relative z-40 hamburgerBtn"
+                >
+                    {/* Hamburger svg & close svg*/}
+                    {menuToggle ? (
+                    // Render the first path(close) when toggle is true
+                    <CloseIcon className={"w-4 h-4"}/>
+                    ) : (
+                    // Render the second path(Hamburger) when toggle is false
+                    <HamburgerIcon className={"w-4 h-4"}/>
+                    )}
+                </button>
+            </div>
+
+
+            <motion.button type="button" 
+              onClick={() => window.open("https://github.com/igbokwe-chibueze/tailwind_side_and_navbars")} 
+              variants={buttonVariants}
+              whileHover="hover"
+              className="flex items-center space-x-2 github_btn"
+            >
+              <GithubIcon className={"w-10"}/>
+              <span>Github</span>
+            </motion.button>

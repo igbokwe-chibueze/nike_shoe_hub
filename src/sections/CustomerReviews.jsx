@@ -50,7 +50,7 @@ const CustomerReviews = () => {
         },
       },
       {
-        breakpoint: 1000,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -58,7 +58,7 @@ const CustomerReviews = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

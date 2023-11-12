@@ -6,15 +6,17 @@ const Button = ({
   textColor,
   borderColor,
   fullWidth,
+  onClick,
 }) => {
   return (
     <button
-      className={`flex justify-center items-center gap-4 px-7 py-4 border font-montserrat text-lg leading-none
+      className={`flex justify-center items-center gap-4 px-4 py-2 border font-montserrat text-lg leading-none hover:bg-rose-500
       ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor}`
           : "bg-coral-red text-white border-coral-red"
       } rounded-full ${fullWidth && "w-full"}`}
+      onClick={onClick}
     >
       {label}
 
