@@ -8,7 +8,7 @@ export const ArrowRightIcon = ({ className, ...rest }) => (
     strokeWidth={1.5} 
     stroke="currentColor" 
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path 
       fillRule="evenodd"
@@ -46,13 +46,48 @@ export const ChevronRightIcon = ({ className, ...rest }) => (
   </svg>
 );
 
+export const HamburgerIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    {...rest}
+    className={`w-6 h-6 ${className}`}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+    />
+  </svg>
+  
+);
+
+export const CloseIcon = ({ className, ...rest }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill="none" 
+    viewBox="0 0 24 24" 
+    strokeWidth={1.5} 
+    stroke="currentColor" 
+    {...rest}
+    className={`w-6 h-6 ${className}`}
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+  </svg>
+
+
+);
+
 export const TruckIcon = ({ className, ...rest }) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
     fill="currentColor" 
     viewBox="0 0 24 24" 
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 116 0h3a.75.75 0 00.75-.75V15z" />
     <path d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
@@ -66,7 +101,7 @@ export const ShieldIcon = ({ className, ...rest }) => (
     fill="currentColor" 
     viewBox="0 0 24 24" 
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path 
       fillRule="evenodd" 
@@ -82,7 +117,7 @@ export const LoveIcon = ({ className, ...rest }) => (
     fill="currentColor" 
     viewBox="0 0 24 24" 
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path
       fillRule="evenodd"
@@ -100,7 +135,7 @@ export const TwitterIcon = ({ className, ...rest }) => (
     viewBox="0 0 24 24"
     fill="currentColor"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path
       d="M22.5 5.776a8.902 8.902 0 0 1-2.474.65 4.18 4.18 0 0 0 1.894-2.28 8.922 8.922 0 0 1-2.737 1 4.387 4.387 0 0 0-3.145-1.302c-2.379 0-4.308 1.847-4.308 4.124 0 .323.038.638.112.94-3.58-.173-6.754-1.815-8.879-4.31A3.961 3.961 0 0 0 2.38 6.67c0 1.431.762 2.694 1.916 3.433a4.455 4.455 0 0 1-1.95-.518v.051c0 1.998 1.485 3.666 3.454 4.045-.36.093-.741.145-1.135.145a4.31 4.31 0 0 1-.81-.077c.548 1.64 2.138 2.832 4.023 2.865a8.89 8.89 0 0 1-5.35 1.763c-.348 0-.69-.02-1.028-.057a12.572 12.572 0 0 0 6.603 1.856c7.925 0 12.257-6.285 12.257-11.736l-.015-.534a8.412 8.412 0 0 0 2.155-2.13Z"
@@ -116,7 +151,7 @@ export const FacebookIcon = ({ className, ...rest }) => (
     viewBox="0 0 24 24"
     fill="currentColor"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path
       d="M17.565 1.005 14.787 1c-3.12 0-5.136 2.125-5.136 5.414v2.497H6.859c-.242 0-.437.2-.437.448v3.617c0 .248.196.449.437.449H9.65v9.126c0 .248.195.449.437.449h3.643a.443.443 0 0 0 .437-.449v-9.126h3.265c.241 0 .436-.2.436-.449l.002-3.617a.455.455 0 0 0-.128-.317.431.431 0 0 0-.31-.131h-3.265V6.794c0-1.017.236-1.533 1.526-1.533h1.87a.444.444 0 0 0 .437-.45V1.454a.443.443 0 0 0-.436-.448Z"
@@ -132,7 +167,7 @@ export const InstagramIcon = ({ className, ...rest }) => (
     viewBox="0 0 24 24"
     fill="currentColor"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path
       fillRule="evenodd"
@@ -149,7 +184,7 @@ export const GithubIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 512 512"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path fill="none" d="M0 0h512v512H0z" />
     <path
@@ -165,7 +200,7 @@ export const CopyrightIcon = ({ className, ...rest }) => (
     fill="currentColor" 
     viewBox="0 0 24 24" 
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path
       d="M10.688 16.096c-1.11 0-2.112-.245-3.008-.736a5.48 5.48 0 0 1-2.096-2.032c-.501-.875-.752-1.85-.752-2.928 0-1.077.25-2.048.752-2.912A5.415 5.415 0 0 1 7.696 5.44c.896-.49 1.899-.736 3.008-.736.832 0 1.6.139 2.304.416A4.776 4.776 0 0 1 14.8 6.336l-.752.752c-.875-.885-1.979-1.328-3.312-1.328-.885 0-1.69.203-2.416.608a4.501 4.501 0 0 0-1.712 1.664C6.203 8.736 6 9.525 6 10.4c0 .875.203 1.664.608 2.368a4.501 4.501 0 0 0 1.712 1.664c.725.405 1.53.608 2.416.608 1.344 0 2.448-.448 3.312-1.344l.752.752a4.912 4.912 0 0 1-1.808 1.232 6.232 6.232 0 0 1-2.304.416Z"
