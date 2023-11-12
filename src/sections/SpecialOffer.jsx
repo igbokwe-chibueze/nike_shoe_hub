@@ -1,4 +1,4 @@
-import { arrowRight } from "../assets/icons";
+import { ArrowRightIcon } from "../assets/allIcons";
 import { offer } from "../assets/images";
 import { Button } from "../components";
 
@@ -30,7 +30,9 @@ const SpecialOffer = () => {
           nothing short of exceptional.
         </p>
         <div className='mt-11 flex flex-wrap gap-4'>
-          <Button label='Shop now' iconURL={arrowRight} />
+          <Button label='Shop now'>
+            <ArrowRightIcon className={"w-8 h-8 text-coral-red fill-white"}/>
+        </Button>
           <Button
             label='Learn more'
             backgroundColor='bg-white'

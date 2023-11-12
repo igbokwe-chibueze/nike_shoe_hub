@@ -1,4 +1,4 @@
-import { star } from "../assets/icons";
+import { Rate } from "antd";
 
 const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
   return (
@@ -10,12 +10,11 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
       />
       <p className='mt-6 max-w-sm text-center info-text'>{feedback}</p>
       <div className='mt-3 flex justify-center items-center gap-2.5'>
-        <img
-          src={star}
-          width={24}
-          height={24}
-          alt='rating star'
-          className='object-contain m-0'
+        <Rate 
+          disabled
+          allowHalf
+          defaultValue={rating}
+          style={{ color: "#FF6452" }}
         />
         <p className='text-xl font-montserrat text-slate-gray'>({rating})</p>
       </div>

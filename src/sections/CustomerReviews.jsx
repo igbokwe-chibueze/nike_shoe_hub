@@ -1,5 +1,5 @@
 import { ReviewCard } from "../components";
-import { reviews } from "../constants";
+import { reviews } from "../constants/data";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
