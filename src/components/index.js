@@ -5,6 +5,7 @@ import PopularProductCard from "./PopularProductCard";
 import ServiceCard from "./ServiceCard";
 import ReviewCard from "./ReviewCard";
 import Menu from "./Menu";
+import BackToTop from "./BackToTop";
 
 export {
     Button,
@@ -13,5 +14,6 @@ export {
     PopularProductCard,
     ServiceCard,
     ReviewCard,
-    Menu
+    Menu,
+    BackToTop
 }

@@ -1,32 +1,14 @@
-import { navLinks } from '../constants/data';
-import { HamburgerIcon, CloseIcon} from '../assets/allIcons';
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  fill="currentColor" 
+  className="w-6 h-6"
+>
+  <path 
+    fillRule="evenodd" 
+    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" 
+    clipRule="evenodd"
+  />
+</svg>
 
 
-
-            {/* Hamburger */}
-            <div className='md:hidden'>
-                <button type="button"
-                    onClick={() => setMenuToggle(!menuToggle)}  // Toggle the 'toggle' state when the icon is clicked.
-                    className="relative z-40 hamburgerBtn"
-                >
-                    {/* Hamburger svg & close svg*/}
-                    {menuToggle ? (
-                    // Render the first path(close) when toggle is true
-                    <CloseIcon className={"w-4 h-4"}/>
-                    ) : (
-                    // Render the second path(Hamburger) when toggle is false
-                    <HamburgerIcon className={"w-4 h-4"}/>
-                    )}
-                </button>
-            </div>
-
-
-            <motion.button type="button" 
-              onClick={() => window.open("https://github.com/igbokwe-chibueze/tailwind_side_and_navbars")} 
-              variants={buttonVariants}
-              whileHover="hover"
-              className="flex items-center space-x-2 github_btn"
-            >
-              <GithubIcon className={"w-10"}/>
-              <span>Github</span>
-            </motion.button>

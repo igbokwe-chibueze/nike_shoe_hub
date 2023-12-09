@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 import { shoes, statistics } from "../constants/data";
-import { Button, ShoeCard } from "../components";
+import { BackToTop, Button, ShoeCard } from "../components";
 import { bigShoe1 } from "../assets/images";
 
-import { ArrowRightIcon } from "../assets/allIcons";
+import { ArrowRightIcon} from "../assets/allIcons";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -68,6 +68,9 @@ const Hero = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="fixed right-4 bottom-4">
+        <BackToTop />
       </div>
     </section>
   );
