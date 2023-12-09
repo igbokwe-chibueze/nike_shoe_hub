@@ -95,7 +95,7 @@ const buttonVariants = {
   }
 }
 
-const Menu5 = () => {
+const Menu = () => {
     
     // Define a state variable 'menuToggle' and a function 'setMenuToggle' to manage the toggle state.
     const [menuToggle, setMenuToggle] = useState(false);
@@ -124,7 +124,7 @@ const Menu5 = () => {
     <div className="">
       <div className="flex items-center space-x-2">
         {/* Hamburger */}
-        <div className='md:hidden'>
+        <div className='lg:hidden'>
             <button type="button"
                 onClick={() => setMenuToggle(!menuToggle)}  // Toggle the 'toggle' state when the icon is clicked.
                 className="relative z-40 hamburgerBtn"
@@ -160,7 +160,7 @@ const Menu5 = () => {
       {menuToggle && (
         <motion.div
           key="menu"
-          variants={window.innerWidth > 639 ? menuVariant2 : menuVariant1} //sm in tailwind starts from 640px, so an screensize above 639(from 640 upwards) menuVariant2 is applied.
+          variants={window.innerWidth > 639 ? menuVariant2 : menuVariant1} //sm in tailwind starts from 640px, so a screensize above 639(from 640 upwards) menuVariant2 is applied.
           initial="hidden"
           animate="visible"
           exit="exit" // Animate the menu out when it's closed
@@ -213,4 +213,4 @@ const Menu5 = () => {
   )
 }
 
-export default Menu5
+export default Menu
